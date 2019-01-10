@@ -1,0 +1,14 @@
+<h1>Edit Article:</h1>
+
+<form action="/articles/<%= @article.id %>" method="post">
+  <input type="hidden" name="_method" value="PATCH">
+  <div>
+    <label for="">Title: </label>
+    <input type="text" name="article[title]" id="title" value="<%= @article.title %>">
+  </div>
+  <div>
+    <label for="">Content: </label>
+    <input type="textarea" name="article[content]" id = "content" value="<%= @article.content %>">
+  </div>
+  <input type="submit" value="Update">
+</form>
