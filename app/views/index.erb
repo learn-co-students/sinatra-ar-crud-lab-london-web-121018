@@ -1,0 +1,12 @@
+<h1> All Articles </h1>
+
+ <% @articles.each do |article| %>
+ <h2><%= article.title %></h2>
+     <%= article.content %>
+     <br>
+     <a href="/articles/<%= article.id %>">View this article</a>
+     <% end %>
+     <br>
+     <br>
+     <a href="/articles/new">Create a new article here!</a>
+     </form>
